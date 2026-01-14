@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.highlights {
+  background-color: #FFF9F5;
+  padding: 40px 0 100px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.highlights__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.highlights__header .line {
+  height: 1px;
+  background-color: #F3EAE5;
+  flex: 1;
+  max-width: 719px;
+}
+.highlights__header .highlights__tagline {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #462B20;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+.highlights__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.highlights__content {
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  z-index: 2;
+}
+.highlights .info-block__title {
+  font-family: "Instrument Serif", serif;
+  font-size: 58px;
+  line-height: 1.05;
+  color: #462B20;
+  margin-bottom: 32px;
+}
+.highlights .info-block__tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  max-width: 732px;
+}
+.highlights .info-block__tabs span {
+  font-family: "Instrument Serif", serif;
+  font-size: 20px;
+  color: #462B20;
+  opacity: 0.4;
+  position: relative;
+}
+.highlights .info-block__tabs span:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background: #F3EAE5;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+.highlights .info-block__tabs span.active, .highlights .info-block__tabs span:first-child {
+  opacity: 1;
+}
+.highlights .info-block__desc {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.56;
+  color: #462B20;
+  opacity: 0.85;
+  max-width: 724px;
+  margin: auto;
+}
+.highlights .divider-short {
+  width: 160px;
+  height: 1px;
+  background-color: #F3EAE5;
+}
+.highlights .img-float {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.highlights .img-top-left {
+  width: 183px;
+  height: 257px;
+  left: -150px;
+  top: 50px;
+}
+.highlights .img-bottom-left {
+  width: 253px;
+  height: 363px;
+  left: -50px;
+  bottom: -50px;
+}
+.highlights .img-top-right {
+  width: 274px;
+  height: 385px;
+  right: -150px;
+  top: 50px;
+}
+.highlights .img-bottom-right {
+  width: 183px;
+  height: 257px;
+  right: 0;
+  bottom: 0;
+}
+
+/* --- RESPONSIVE CHO MÀN HÌNH 375PX --- */
+@media (max-width: 767px) {
+  .highlights {
+    padding: 32px 0 60px;
+  }
+  .highlights__header {
+    margin-bottom: 40px;
+    padding: 0 14px;
+    gap: 12px;
+  }
+  .highlights__header .line {
+    max-width: 99px;
+  }
+  .highlights__header .highlights__tagline {
+    font-size: 18px;
+    line-height: 23px;
+    color: #693521;
+  }
+  .highlights__container {
+    padding: 0 14px;
+  }
+  .highlights__content {
+    max-width: 100%;
+    gap: 48px;
+  }
+  .highlights .img-float {
+    display: none;
+  }
+  .highlights .info-block__title {
+    font-size: 31px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+  .highlights .info-block__tabs {
+    gap: 5px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .highlights .info-block__tabs span {
+    font-size: 16px;
+    line-height: 23px;
+    opacity: 0.5;
+  }
+  .highlights .info-block__tabs span:not(:last-child)::after {
+    height: 12px;
+    margin-left: 8px;
+  }
+  .highlights .info-block__desc {
+    font-size: 13px;
+    line-height: 21px;
+    max-width: 325px;
+    opacity: 0.85;
+  }
+  .highlights .divider-short {
+    width: 120px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=TestFrontendFrame3.css.map */

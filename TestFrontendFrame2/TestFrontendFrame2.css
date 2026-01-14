@@ -1,0 +1,195 @@
+@charset "UTF-8";
+.construction {
+  padding: 100px 0;
+  background: #fff;
+  /* --- Styles cho phần Nội dung --- */
+  /* --- Styles cho Accordion --- */
+  /* --- Styles cho Hình ảnh --- */
+  /* --- Vẽ Icon Plus/Minus bằng CSS --- */
+}
+.construction__container {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "info main side" "list main side";
+  gap: 40px 20px;
+  align-items: start;
+}
+.construction__info-top {
+  grid-area: info;
+  margin-top: 50px;
+}
+.construction__accordion {
+  grid-area: list;
+}
+.construction__img-main {
+  grid-area: main;
+}
+.construction__img-side {
+  grid-area: side;
+}
+.construction__label {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.7;
+  color: #402c22;
+  display: block;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.construction__title {
+  font-family: "Optima", serif;
+  font-size: 63px;
+  font-weight: 400;
+  line-height: 1.06;
+  color: #402c22;
+  margin: 0;
+}
+.construction__accordion {
+  border-top: 1px solid #d9d5d3;
+}
+.construction__item {
+  border-bottom: 1px solid #d9d5d3;
+  padding: 24px 0;
+}
+.construction__item.active .construction__desc {
+  display: block;
+}
+.construction__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Optima Nova LT Pro", "Optima", serif;
+  font-size: 22px;
+  color: #402c22;
+  cursor: pointer;
+}
+.construction__desc {
+  margin-top: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.44;
+  color: #402c22;
+  opacity: 0.8;
+  max-width: 403px;
+  display: none;
+}
+.construction__img-main img {
+  display: block;
+  max-width: 712px;
+  max-height: 793px;
+  margin-left: 90px;
+}
+.construction__img-side img {
+  display: block;
+  max-width: 516px;
+  max-height: 513px;
+  margin-right: -90px;
+}
+.construction .icon-plus, .construction .icon-minus {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.construction .icon-plus::before, .construction .icon-minus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.2px;
+  background: #402c22;
+  transform: translateY(-50%);
+}
+.construction .icon-plus::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1.2px;
+  height: 100%;
+  background: #402c22;
+  transform: translateX(-50%);
+}
+
+/* --- RESPONSIVE CHO MÀN HÌNH 375PX --- */
+@media (max-width: 767px) {
+  .construction {
+    padding: 47px 0 60px;
+    /* Hình ảnh */
+    /* Accordion */
+    /* Điều chỉnh Icon cho Mobile */
+  }
+  .construction__container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "info" "main" "side" "list";
+    gap: 0;
+    padding: 0 20px;
+  }
+  .construction__info-top {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .construction__label {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .construction__title {
+    font-family: "Optima nova LT Pro", "Optima", serif;
+    font-size: 33px;
+    line-height: 38px;
+  }
+  .construction__img-main {
+    margin-bottom: 24px;
+  }
+  .construction__img-main img {
+    width: 337px;
+    height: 375px;
+    margin-left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .construction__img-side {
+    margin-bottom: 28px;
+  }
+  .construction__img-side img {
+    width: 249px;
+    height: 248px;
+    margin-right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .construction__accordion {
+    border-top: 1px solid #d9d5d3;
+  }
+  .construction__item {
+    padding: 16px 5px;
+  }
+  .construction__header {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .construction__header span:first-child {
+    font-family: "Optima nova LT Pro", "Optima", serif;
+  }
+  .construction__desc {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 336px;
+    opacity: 0.75;
+  }
+  .construction .icon-plus, .construction .icon-minus {
+    width: 12.27px;
+    height: 12.27px;
+  }
+  .construction .icon-plus::before, .construction .icon-minus::before {
+    height: 1.02px;
+  }
+  .construction .icon-plus::after {
+    width: 1.02px;
+  }
+}/*# sourceMappingURL=TestFrontendFrame2.css.map */
