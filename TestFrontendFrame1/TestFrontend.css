@@ -1,10 +1,6 @@
 .feature {
   padding: 80px 0;
   background: #fff;
-  /* LEFT CARD */
-  /* RIGHT SIDE */
-  /* INFO CARD */
-  /* IMAGE BANNER */
 }
 .feature__container {
   max-width: 1600px;
@@ -144,7 +140,6 @@
   display: block;
 }
 
-/* BUTTON */
 .btn-primary {
   position: absolute;
   bottom: 40%;
@@ -166,9 +161,6 @@
 @media (max-width: 375px) {
   .feature {
     padding: 16px 0;
-    /* ===== CARD 1: BIKE ===== */
-    /* ===== CARD 2: INFO ===== */
-    /* ===== CARD 3: BANNER ===== */
   }
   .feature__container {
     grid-template-columns: 1fr;

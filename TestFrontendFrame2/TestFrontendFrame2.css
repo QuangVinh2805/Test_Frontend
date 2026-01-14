@@ -1,11 +1,6 @@
-@charset "UTF-8";
 .construction {
   padding: 100px 0;
   background: #fff;
-  /* --- Styles cho phần Nội dung --- */
-  /* --- Styles cho Accordion --- */
-  /* --- Styles cho Hình ảnh --- */
-  /* --- Vẽ Icon Plus/Minus bằng CSS --- */
 }
 .construction__container {
   max-width: 1800px;
@@ -114,13 +109,9 @@
   transform: translateX(-50%);
 }
 
-/* --- RESPONSIVE CHO MÀN HÌNH 375PX --- */
 @media (max-width: 767px) {
   .construction {
     padding: 47px 0 60px;
-    /* Hình ảnh */
-    /* Accordion */
-    /* Điều chỉnh Icon cho Mobile */
   }
   .construction__container {
     grid-template-columns: 1fr;

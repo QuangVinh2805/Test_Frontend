@@ -1,4 +1,3 @@
-// Khai báo các biến màu và font
 $bg-color: #FFF9F5;
 $text-color: #462B20;
 $border-color: #F3EAE5;
@@ -54,7 +53,6 @@ $font-sans: 'Inter', sans-serif;
     z-index: 2;
   }
 
-  // Khối nội dung chi tiết
   .info-block {
     &__title {
       font-family: $font-serif;
@@ -80,7 +78,6 @@ $font-sans: 'Inter', sans-serif;
         opacity: 0.4;
         position: relative;
 
-        // Dấu gạch đứng phân cách các tab
         &:not(:last-child)::after {
           content: "";
           display: inline-block;
@@ -114,7 +111,6 @@ $font-sans: 'Inter', sans-serif;
     background-color: $border-color;
   }
 
-  // Quản lý các ảnh bay xung quanh
   .img-float {
     position: absolute;
     object-fit: cover;
@@ -141,10 +137,9 @@ $font-sans: 'Inter', sans-serif;
     right: 0; bottom: 0;
   }
 }
-/* --- RESPONSIVE CHO MÀN HÌNH 375PX --- */
 @media (max-width: 767px) {
   .highlights {
-    padding: 32px 0 60px; // Padding theo thiết kế mobile
+    padding: 32px 0 60px; 
 
     &__header {
       margin-bottom: 40px;
@@ -152,13 +147,13 @@ $font-sans: 'Inter', sans-serif;
       gap: 12px;
 
       .line {
-        max-width: 99px; // Khớp với style Figma: width: 99px
+        max-width: 99px; 
       }
 
       .highlights__tagline {
-        font-size: 18px; // Khớp style: font-size: 18px
+        font-size: 18px; 
         line-height: 23px;
-        color: #693521; // Text-2 màu nâu đậm hơn
+        color: #693521; 
       }
     }
 
@@ -168,48 +163,47 @@ $font-sans: 'Inter', sans-serif;
 
     &__content {
       max-width: 100%;
-      gap: 48px; // Khoảng cách giữa các block thu nhỏ lại
+      gap: 48px; 
     }
 
-    // Ẩn các ảnh decor ở mobile theo yêu cầu ảnh mẫu (thường mobile sẽ ẩn để tập trung text)
     .img-float {
       display: none; 
     }
 
     .info-block {
       &__title {
-        font-size: 31px; // Khớp style: font-size: 31px
+        font-size: 31px;
         line-height: 32px;
         margin-bottom: 24px;
       }
 
       &__tabs {
-        gap: 5px; // Figma: gap 5px
+        gap: 5px; 
         margin-bottom: 16px;
-        overflow: hidden; // Đảm bảo không bị vỡ layout
+        overflow: hidden; 
 
         span {
-          font-size: 16px; // Khớp style: font-size: 16px
+          font-size: 16px;
           line-height: 23px;
           opacity: 0.5;
 
           &:not(:last-child)::after {
-            height: 12px; // Thanh gạch đứng nhỏ lại cho mobile
+            height: 12px; 
             margin-left: 8px;
           }
         }
       }
 
       &__desc {
-        font-size: 13px; // Khớp style: font-size: 13px
+        font-size: 13px; 
         line-height: 21px;
-        max-width: 325px; // Khớp style: width 347px
+        max-width: 325px; 
         opacity: 0.85;
       }
     }
 
     .divider-short {
-      width: 120px; // Thu ngắn divider cho mobile
+      width: 120px; 
       margin: 0 auto;
     }
   }

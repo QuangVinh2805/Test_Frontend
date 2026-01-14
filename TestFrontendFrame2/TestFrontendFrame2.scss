@@ -1,4 +1,3 @@
-// Biến số từ thiết kế Figma
 $color-text: #402c22;
 $color-border: #d9d5d3;
 $font-serif: "Optima", serif;
@@ -12,7 +11,6 @@ $font-sans: "Inter", sans-serif;
     max-width: 1800px;
     margin: 0 auto;
     
-    // Sử dụng Grid để quản lý 3 phần chính trên Desktop
     display: grid;
     grid-template-areas: 
       "info main side"
@@ -21,13 +19,11 @@ $font-sans: "Inter", sans-serif;
     align-items: start;
   }
 
-  // Gán tên Area cho từng khối
   &__info-top { grid-area: info;margin-top: 50px; }
   &__accordion { grid-area: list; }
   &__img-main { grid-area: main; }
   &__img-side { grid-area: side; }
 
-  /* --- Styles cho phần Nội dung --- */
   &__label {
     font-family: $font-sans;
     font-size: 16px;
@@ -49,7 +45,6 @@ $font-sans: "Inter", sans-serif;
     margin: 0;
   }
 
-  /* --- Styles cho Accordion --- */
   &__accordion {
     border-top: 1px solid $color-border;
   }
@@ -81,10 +76,9 @@ $font-sans: "Inter", sans-serif;
     color: $color-text;
     opacity: 0.8;
     max-width: 403px;
-    display: none; // Mặc định ẩn, hiện khi có class .active
+    display: none; 
   }
 
-  /* --- Styles cho Hình ảnh --- */
   &__img-main img {
     display: block;
     max-width:712px;
@@ -99,7 +93,6 @@ $font-sans: "Inter", sans-serif;
     margin-right:-90px;
     }
 
-  /* --- Vẽ Icon Plus/Minus bằng CSS --- */
   .icon-plus, .icon-minus {
     width: 14px;
     height: 14px;
@@ -128,26 +121,24 @@ $font-sans: "Inter", sans-serif;
   }
 }
 
-/* --- RESPONSIVE CHO MÀN HÌNH 375PX --- */
-@media (max-width: 767px) { // Áp dụng cho mobile, tối ưu ở 375px
+@media (max-width: 767px) { 
   .construction {
-    padding: 47px 0 60px; // Padding top theo vị trí Label (47px)
+    padding: 47px 0 60px;
 
     &__container {
-      // Chuyển grid thành 1 cột và sắp xếp lại thứ tự Area
       grid-template-columns: 1fr;
       grid-template-areas: 
         "info"
         "main"
         "side"
         "list";
-      gap: 0; // Reset gap để tinh chỉnh margin thủ công theo Figma
+      gap: 0; 
       padding: 0 20px;
     }
 
     &__info-top {
       margin-top: 0;
-      margin-bottom: 24px; // Khoảng cách từ title đến ảnh main
+      margin-bottom: 24px; 
     }
 
     &__label {
@@ -162,34 +153,32 @@ $font-sans: "Inter", sans-serif;
       line-height: 38px;
     }
 
-    /* Hình ảnh */
     &__img-main {
-      margin-bottom: 24px; // Khoảng cách giữa 2 ảnh
+      margin-bottom: 24px; 
       img {
         width: 337px;
         height: 375px;
-        margin-left: 0; // Reset margin của desktop
+        margin-left: 0;
         object-fit: cover;
       }
     }
 
     &__img-side {
-      margin-bottom: 28px; // Khoảng cách từ ảnh side đến accordion
+      margin-bottom: 28px; 
       img {
         width: 249px;
         height: 248px;
-        margin-right: 0; // Reset margin của desktop
+        margin-right: 0;
         object-fit: cover;
       }
     }
 
-    /* Accordion */
     &__accordion {
       border-top: 1px solid $color-border;
     }
 
     &__item {
-      padding: 16px 5px; // Thu nhỏ padding so với desktop
+      padding: 16px 5px; 
     }
 
     &__header {
@@ -197,7 +186,6 @@ $font-sans: "Inter", sans-serif;
       line-height: 24px;
       
       span:first-child {
-        // Đảm bảo chữ Cushion/Upholstery đúng style
         font-family: "Optima nova LT Pro", $font-serif;
       }
     }
@@ -210,7 +198,6 @@ $font-sans: "Inter", sans-serif;
       opacity: 0.75;
     }
 
-    /* Điều chỉnh Icon cho Mobile */
     .icon-plus, .icon-minus {
       width: 12.27px;
       height: 12.27px;

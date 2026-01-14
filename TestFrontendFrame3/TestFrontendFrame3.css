@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .highlights {
   background-color: #FFF9F5;
   padding: 40px 0 100px;
@@ -123,7 +122,6 @@
   bottom: 0;
 }
 
-/* --- RESPONSIVE CHO MÀN HÌNH 375PX --- */
 @media (max-width: 767px) {
   .highlights {
     padding: 32px 0 60px;
