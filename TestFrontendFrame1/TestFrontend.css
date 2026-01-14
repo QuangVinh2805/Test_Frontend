@@ -15,6 +15,7 @@
   border-radius: 55px;
   overflow: hidden;
   max-height: 852px;
+  max-width: 782px;
 }
 .feature__label__text {
   position: relative;
@@ -36,19 +37,20 @@
   width: 100%;
   max-width: 687px;
   display: block;
-  margin: 190px auto 0;
+  margin: 140px auto 0;
   height: 687px;
 }
 .feature__text {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: -16px;
+  left: 20px;
 }
 .feature__subtitle {
   font-size: 31px;
   font-family: Poppins;
   font-weight: 500;
   color: #fff;
+  margin-left: 9px;
 }
 .feature__title {
   font-size: 150px;
@@ -56,7 +58,8 @@
   font-weight: 500;
   color: #fff;
   line-height: 1;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+  letter-spacing: -9px;
 }
 .feature__right {
   display: flex;
@@ -187,30 +190,31 @@
     margin-top: 0;
   }
   .feature__bike img {
-    width: 286px;
+    width: 286.61188px;
     height: auto;
-    margin: 96px auto 0;
+    margin: 113px auto 0;
   }
   .feature__text {
     position: absolute;
-    left: 24px;
-    bottom: 32px;
+    left: 20px;
+    bottom: 47px;
   }
   .feature__subtitle {
     font-size: 25px;
     line-height: 30px;
     font-family: "Be Vietnam Pro";
     font-weight: 600;
-    margin-left: 25px;
+    margin-left: 15px;
   }
   .feature__title {
     font-size: 80px;
     line-height: 54px;
     font-family: "Be Vietnam Pro";
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 5px;
     margin-bottom: 0;
+    letter-spacing: -4px;
   }
   .feature__info {
     width: 100%;
@@ -326,5 +330,130 @@
     font-family: "Be Vietnam Pro";
     font-size: 16px;
     font-weight: 500;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1200px) {
+  .feature {
+    padding: 64px 0;
+  }
+  .feature__container {
+    max-width: 1200px;
+    gap: 24px;
+  }
+  .feature__left {
+    border-radius: 40px;
+  }
+  .feature__bike img {
+    max-width: 600px;
+    height: auto;
+    margin-top: 120px;
+  }
+  .feature__title {
+    font-size: 120px;
+    letter-spacing: -6px;
+  }
+  .feature__heading {
+    font-size: 40px;
+  }
+  .feature__stats {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+  .feature {
+    padding: 48px 0;
+  }
+  .feature__container {
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 24px;
+  }
+  .feature__text {
+    bottom: 165px;
+  }
+  .feature__left {
+    max-height: 625px;
+    border-radius: 32px;
+  }
+  .feature__right {
+    max-height: 625px;
+    border-radius: 32px;
+  }
+  .feature__bike img {
+    max-width: 520px;
+    margin-top: 100px;
+  }
+  .feature__title {
+    font-size: 96px;
+    letter-spacing: -4px;
+  }
+  .feature__subtitle {
+    font-size: 24px;
+  }
+  .feature__info {
+    padding: 32px;
+    height: 396px;
+    max-height: 500px;
+  }
+  .feature__heading {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+  .feature__stats {
+    margin-top: 36px;
+  }
+  .feature__stat_loudspeaker p, .feature__stat_bluetooth p, .feature__stat_volume p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) and (min-width: 376px) {
+  .feature {
+    padding: 32px 0;
+  }
+  .feature__container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .feature__text {
+    bottom: 110px;
+  }
+  .feature__left {
+    max-height: 700px;
+    height: 100%;
+    border-radius: 24px;
+  }
+  .feature__label__text {
+    top: 24px;
+    left: 32px;
+  }
+  .feature__bike img {
+    margin-top: 120px;
+  }
+  .feature__subtitle {
+    font-size: 22px;
+  }
+  .feature__title {
+    font-size: 90px;
+    letter-spacing: -4px;
+  }
+  .feature__info {
+    padding: 28px 20px;
+  }
+  .feature__heading {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+  .feature__stats {
+    margin-top: 32px;
+  }
+  .feature__banner {
+    max-height: 500px;
+    height: 100%;
+  }
+  .btn-primary {
+    bottom: 35%;
   }
 }/*# sourceMappingURL=TestFrontend.css.map */
